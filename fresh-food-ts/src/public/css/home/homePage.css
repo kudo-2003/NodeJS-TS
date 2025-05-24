@@ -1,0 +1,65 @@
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+    }
+
+    .images-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+
+    .images-section img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 0.5rem;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .content h2 {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    

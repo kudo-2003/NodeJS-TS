@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basket - World Peas</title>
+    <link rel="stylesheet" href="/css/basket/basketPage.css" />
+    <link rel="stylesheet" href="/css/partials/nav.css" />
+</head>
+<body>
+
+  <%- include('../partials/nav') %>
+
+  <div class="container">
+    <div class="basket-header">Basket <span style="font-weight: normal; font-size: 1rem;">3 items</span></div>
+
+    <div class="basket-grid">
+      <!-- Basket items -->
+      <div class="basket-items">
+        <div class="item">
+          <img src="/images/basket/ca-chua.png" alt="Heirloom tomato">
+          <div class="item-details">
+            <div class="item-title">Heirloom tomato</div>
+            <div class="item-price-per-lb">$5.99 / lb</div>
+            <div class="item-weight">1 lb ✏️</div>
+          </div>
+          <div class="item-total">$5.99</div>
+        </div>
+
+        <div class="item">
+          <img src="/images/basket/rung.png" alt="Organic ginger">
+          <div class="item-details">
+            <div class="item-title">Organic ginger</div>
+            <div class="item-price-per-lb">$12.99 / lb</div>
+            <div class="item-weight">0.5 lb ✏️</div>
+          </div>
+          <div class="item-total">$6.50</div>
+        </div>
+
+        <div class="item">
+          <img src="/images/basket/hanh.png" alt="Sweet onion">
+          <div class="item-details">
+            <div class="item-title">Sweet onion</div>
+            <div class="item-price-per-lb">$2.99 / lb</div>
+            <div class="item-weight">5 lb ✏️</div>
+          </div>
+          <div class="item-total">$14.95</div>
+        </div>
+      </div>
+
+      <!-- Order summary -->
+      <div class="summary-box">
+        <h3>Order summary</h3>
+        <div class="summary-row"><span>Subtotal</span><span>$27.44</span></div>
+        <div class="summary-row"><span>Shipping</span><span>$3.99</span></div>
+        <div class="summary-row"><span>Tax</span><span>$2.00</span></div>
+        <div class="summary-row summary-total"><span>Total</span><span>$33.43</span></div>
+        <button class="pay-btn">Continue to payment →</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
