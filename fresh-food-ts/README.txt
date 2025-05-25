@@ -17,7 +17,8 @@ fresh-food-ts/
 │   │   ├── userRoutes.ts
 │   │   ├── adminRoutes.ts
 │   │   ├── homeRoutes.ts
-│
+│   │   ├── aboutRoutes.ts    # 🆕 Thêm route cho trang Giới thiệu
+| 
 │   ├── controllers/         
 │   │   ├── productController.ts
 │   │   ├── orderController.ts
@@ -25,7 +26,6 @@ fresh-food-ts/
 │   │   ├── adminController.ts
 │
 │   ├── middlewares/         
-│   │   ├── authMiddleware.ts
 │   │   ├── errorHandler.ts
 │
 │   ├── services/            
@@ -44,6 +44,8 @@ fresh-food-ts/
 │   │   │   │   ├── home.ejs # 🏠 Trang chủ chính
 │   │   │   ├── basket/      # 🛒 Giỏ hàng
 │   │   │   │   ├── basket.ejs # 🛒 Trang giỏ hàng
+│   │   │   ├── about/       # ℹ️ Giới thiệu
+│   │   │   │   ├── about.ejs # ℹ️ Trang giới thiệu
 │
 │   ├── public/              
 │   │   ├── css/

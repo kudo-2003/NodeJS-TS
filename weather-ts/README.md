@@ -7,6 +7,8 @@
  - npm install dotenv
  - npm install -D @types/node
  - npx tsc --init
+ - npm install typescript@latest --save-dev
+
 
 
 ## Run:

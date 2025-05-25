@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu | Fresh Food</title>
+    <link rel="stylesheet" href="/css/about/aboutPage.css">
+    <link rel="stylesheet" href="/css/partials/nav.css">
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h1>Chào Mừng Đến Với Fresh Food</h1>
+                <p>Thực phẩm tươi sạch, giao nhanh, mang đến trải nghiệm ăn uống lành mạnh!</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Về Chúng Tôi</h2>
+                <p>Fresh Food là nền tảng cung cấp thực phẩm sạch và tươi ngon, giao hàng nhanh chóng tận nơi. Chúng tôi cam kết mang lại chất lượng tốt nhất cho khách hàng.</p>
+                
+                <h3>Sứ Mệnh Của Chúng Tôi</h3>
+                <p>Chúng tôi mong muốn giúp mọi người tiếp cận thực phẩm an toàn, chất lượng cao với mức giá hợp lý.</p>
+
+                <div class="slider">
+                    <div class="slider-container">
+                        <img src="/images/about/ca.jpg" alt="Cá" class="slider-img">
+                        <img src="/images/about/ga.jpg" alt="Gà" class="slider-img">
+                        <img src="/images/about/heo.jpg" alt="heo" class="slider-img">
+                    </div>
+                    <button class="slider-prev">❮</button>
+                    <button class="slider-next">❯</button>
+                </div>
+
+                <div class="values">
+                    <div class="value-card">
+                        <h3>Chất Lượng</h3>
+                        <p>Cam kết cung cấp thực phẩm tươi sạch, đạt chuẩn an toàn vệ sinh.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Tốc Độ</h3>
+                        <p>Giao hàng nhanh chóng, đúng hẹn, tiện lợi cho mọi khách hàng.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Bền Vững</h3>
+                        <p>Hỗ trợ nông nghiệp địa phương, góp phần bảo vệ môi trường.</p>
+                    </div>
+                </div>
+
+                <a href="/products" class="cta-button">Khám Phá Sản Phẩm Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Fresh Food. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="/js/about/about.js"></script>
+</body>
+</html>
