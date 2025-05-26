@@ -1,0 +1,9 @@
+adminController.ts: Xử lý các thao tác liên quan đến admin, như đăng nhập, quản lý sản phẩm...
+
+homeController.ts: Điều khiển logic cho trang chủ.
+
+basketController.ts: Quản lý giỏ hàng, thêm/xóa sản phẩm.
+
+freshController.ts: Điều khiển trang thực phẩm tươi, hiển thị danh sách sản phẩm.
+
+aboutController.ts: Xử lý thông tin trang giới thiệu.

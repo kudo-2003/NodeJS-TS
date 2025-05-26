@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #16a34a;
+    color: white;
+    padding: 1.5rem;
+    transition: width 0.3s ease;
+    position: fixed;
+}
+
+.sidebar.closed {
+    width: 60px;
+    padding: 1.5rem 0.5rem;
+}
+
+.sidebar.closed h2, .sidebar.closed .text {
+    display: none;
+}
+
+.sidebar.closed .icon {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.toggle-sidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    margin: 0.3rem 0;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background: #22c55e;
+}
+
+.sidebar .icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 1.5rem;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.full-width {
+    margin-left: 60px;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #16a34a;
+    animation: fadeIn 1s ease-in;
+}
+
+header p {
+    color: #4b5563;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-size: 1.1rem;
+    color: #16a34a;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.recent-orders {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.recent-orders h2 {
+    font-size: 1.5rem;
+    color: #16a34a;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.7rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+    color: #16a34a;
+}
+
+.status.pending { color: #d97706; }
+.status.completed { color: #16a34a; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+    .sidebar.closed {
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .main-content.full-width {
+        margin-left: 0;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}

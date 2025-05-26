@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Admin | Fresh Food</title>
+    <link rel="stylesheet" href="/css/admin/admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Panel - Đăng nhập</h1>
+    </header>
+
+    <section class="signin">
+        <div class="container">
+            <form action="/admin/signin" method="POST">
+                <h2>Đăng nhập Quản trị viên</h2>
+
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Fresh Food. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>

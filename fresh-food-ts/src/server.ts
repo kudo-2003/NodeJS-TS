@@ -6,6 +6,10 @@ import dotenv from 'dotenv';
 import homeRoutes from './routes/homeRoutes';
 import basketRoutes from './routes/basketRoutes';
 import aboutRoutes from './routes/aboutRoutes';
+import freshRoutes from './routes/freshRoutes';
+import adminRoutes from './routes/adminRoutes';
+
+
 import errorHandler from './middlewares/errorHandler';
 
 dotenv.config();
@@ -19,6 +23,7 @@ interface CustomError extends Error {
 
 // Middleware
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 // Static files
@@ -32,6 +37,9 @@ app.set('view engine', 'ejs');
 app.use('/', homeRoutes);
 app.use('/basket', basketRoutes);
 app.use('/about', aboutRoutes);
+app.use('/admin', adminRoutes);
+app.use('/fresh', freshRoutes);
+
 
 // 🆕 Middleware xử lý lỗi 404
 app.use((req: Request, res: Response, next: NextFunction) => {

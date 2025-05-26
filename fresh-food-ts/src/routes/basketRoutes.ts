@@ -1,9 +1,7 @@
 import { Router, Request, Response } from 'express';
-// import { BasketController } from '../controllers/basketController';
-// import { authMiddleware } from '../middlewares/authMiddleware';
 
 const router = Router();
-// const basketController = new BasketController();
+
 
 router.get('/', (req, res) => {
   res.render('homePage/basket/basket');

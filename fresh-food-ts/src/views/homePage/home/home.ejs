@@ -1,3 +1,4 @@
+<!--fresh-food-ts\src\views\homePage\home\home.ejs-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,5 +33,16 @@
     <p>Apples. Oranges. Limes. Lemons. Guavas. Carrots. Cucumbers. Jicamas... (v.v)</p>
     <p>Oh! Onions. Yams. Avocados. Lettuce. Arugula (to some, "rocket")... (v.v)</p>
   </section>
+
+  <section>
+    <form id="newsletter-form" action="/subscribe" method="POST">
+  <label for="email">Nhập email của bạn để nhận tin tức:</label>
+  <input type="email" name="email" id="email" required />
+  <button type="submit">Đăng ký</button>
+</form>
+
+<p id="message"></p>
+  </section>
+  <script src="/js/home/newsletter.js"></script>
 </body>
 </html>

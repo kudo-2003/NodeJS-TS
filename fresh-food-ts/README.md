@@ -9,6 +9,7 @@
  - npm install dotenv
  - npm install cors
  - npm install ejs
+ - npm install path 
  - npm install --save-dev typescript 
  - npm install ts-node 
  - npm install @types/express 
