@@ -1,0 +1,26 @@
+
+        <h1>Quản Lý Sản Phẩm</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã Sản Phẩm</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% products.forEach(product => { %>
+                    <tr>
+                        <td><%= product.id %></td>
+                        <td><%= product.name %></td>
+                        <td><%= product.price %> VNĐ</td>
+                        <td>
+                            <button>Sửa</button>
+                            <button>Xóa</button>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+

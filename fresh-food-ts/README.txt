@@ -20,12 +20,13 @@ fresh-food-ts/
 │   ├── routes/              
 │   │   ├── adminRoutes.ts
 │   │   ├── homeRoutes.ts
-│   │   ├── aboutRoutes.ts    # 🆕 Thêm route cho trang Giới thiệu
+│   │   ├── aboutRoutes.ts    # 🆕 Route cho trang Giới thiệu
 │   │   ├── freshRoutes.ts   # 🆕 Route cho trang thực phẩm tươi
 │   │   ├── basketRoutes.ts
 |
 │   ├── controllers/         
-│   │   ├── 
+│   │   ├── adminController.ts  # 🎯 Controller cho Admin
+│   │   ├── productController.ts  # 🛒 Controller cho sản phẩm
 │
 │   ├── middlewares/         
 │   │   ├── errorHandler.ts
@@ -41,34 +42,36 @@ fresh-food-ts/
 │   ├── views/               # 🎨 Giao diện EJS
 │   │   ├── adminPage/       # 📂 Giao diện Admin
 │   │   │   ├── adminSigninPage.ejs # 🔐 Trang đăng nhập Admin
-│   │   │   ├── adminDashboard.ejs  # 📊 Trang bảng điều khiển Admin (tùy chọn)
+│   │   │   ├── adminDashboard.ejs  # 📊 Trang bảng điều khiển Admin
+│   │   │   ├── adminProducts.ejs  # 🛒 Trang quản lý sản phẩm
 |
-│   │   ├── homePage/        # 📂 Giao diện HomePage tách riêng
-│   │   │   ├── home/        # 📂 Trang chủ chính
-│   │   │   │   ├── home.ejs # 🏠 Trang chủ chính
-│   │   │   ├── basket/      # 🛒 Giỏ hàng
-│   │   │   │   ├── basket.ejs # 🛒 Trang giỏ hàng
-│   │   │   ├── fresh/       # 🆕 Trang thực phẩm tươi
-│   │   │   │   ├── fresh.ejs # 🥦 Giao diện thực phẩm tươi
-│   │   │   ├── about/       # ℹ️ Giới thiệu
-│   │   │   │   ├── about.ejs # ℹ️ Trang giới thiệu
-│   │   │   ├── partials/    # 🆕 Thành phần chung của HomePage
-│   │   │   │   ├── nav.ejs  # 🔗 Thanh điều hướng
+│   │   ├── homePage/        # 📂 Giao diện HomePage
+│   │   │   ├── home/
+│   │   │   │   ├── home.ejs
+│   │   │   ├── basket/
+│   │   │   │   ├── basket.ejs
+│   │   │   ├── fresh/
+│   │   │   │   ├── fresh.ejs
+│   │   │   ├── about/
+│   │   │   │   ├── about.ejs
+│   │   │   ├── partials/
+│   │   │   │   ├── nav.ejs
 │
 │   ├── public/              
 │   │   ├── css/
-│   │   │   ├── partials/    # 📂 Các tệp CSS thành phần
-│   │   │   │   ├── nav.css  # 🎨 CSS cho thanh điều hướng
+│   │   │   ├── admin/       # 📂 CSS cho Admin
+│   │   │   │   ├── adminDashboardPage.css # 📊 CSS bảng điều khiển Admin
+│   │   │   │   ├── adminSignInPage.css # 🔐 CSS trang đăng nhập Admin
+│   │   │   ├── about/       # 📂 CSS cho trang Giới thiệu
+│   │   │   │   ├── aboutPage.css # ℹ️ CSS trang giới thiệu
+│   │   │   ├── home/        # 📂 CSS cho trang Home
+│   │   │   │   ├── homePage.css # 🏠 CSS trang chủ
+│   │   │   ├── fresh/       # 📂 CSS cho trang thực phẩm tươi
+│   │   │   │   ├── freshPage.css # 🥦 CSS trang thực phẩm tươi
 │   │   ├── js/
-│   │   │   ├── about/       # 📂 Script cho trang Giới thiệu
-│   │   │   │   ├── about.js # 📜 JavaScript cho trang about.ejs
+│   │   │   ├── about/
+│   │   │   │   ├── about.js
 │   │   ├── images/
-│   │   │   ├── about/       # 📂 Hình ảnh trang Giới thiệu
-│   │   │   │   ├── ca.jpg   # 🐟 Hình ảnh con cá
-│   │   │   ├── basket/      # 📂 Hình ảnh trang Giỏ hàng
-│   │   │   │   ├── rung.png # 🌳 Hình ảnh rừng
-│   │   │   ├── home/        # 📂 Hình ảnh trang Home
-│   │   │   │   ├── food.png # 🍽️ Hình ảnh thực phẩm
 │
 │   ├── server.ts            # 🚀 Cấu hình Express app
 │   ├── index.ts             # 🔁 Khởi chạy server

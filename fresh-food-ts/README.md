@@ -18,6 +18,9 @@
  - npm install -D typescript
  - npm install nodemon 
  - npm install @types/node 
+ - npm i sequelize
+ - npm install mysql2
+
 
 ## Run
  - npm start

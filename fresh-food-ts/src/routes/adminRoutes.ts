@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { getDashboardData, getAllProducts } from '../controllers/adminController';
 
 const router = Router();
 
@@ -20,9 +21,19 @@ router.post('/signin', (req, res) =>{
     }
 });
 
-router.get('/dashboard', (req, res) => {
-    res.render('adminPage/adminDashboardPage', {
-        title: 'Bảng điều khiển Admin'
+router.get('/dashboard', async (req, res) => {
+    const data = await getDashboardData();
+    res.render('adminPage/adminDashboard', data);
+});
+
+router.get('/products', async (req, res) => {
+    const products = await getAllProducts();
+    res.render('adminPage/adminProducts', { products }, (err, html) => {
+        if (err) {
+            res.status(500).send('Lỗi khi tải nội dung');
+        } else {
+            res.send(html);
+        }
     });
 });
 

@@ -2,6 +2,8 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
 
+import { sequelize } from "./database/connection";
+
 // Import routes
 import homeRoutes from './routes/homeRoutes';
 import basketRoutes from './routes/basketRoutes';
@@ -52,5 +54,10 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
     errorHandler(err, req, res, next);
 });
+
+sequelize
+  .authenticate()
+  .then(() => console.log("✅ Kết nối database thành công! mysql"))
+  .catch((error) => console.error("❌ Lỗi kết nối database:", error));
 
 export default app;
