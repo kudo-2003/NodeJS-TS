@@ -1,0 +1,19 @@
+1. tao nhanh
+ - cc
+ - set
+ - linkedlist
+ - dic
+ - mdic
+ - bst
+ - stack
+ - queue
+ - bag
+ - heap
+ - pq
+ - mysqldb => ket noi mysql database
+ - mongdb => ket noi mongodb database
+ - mongoose 
+ - mongoose-model
+ - func
+ - arfunc
+ - 

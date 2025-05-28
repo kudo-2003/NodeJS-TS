@@ -1,0 +1,11 @@
+extends layouts/main
+
+block content
+  h1 Danh sách sản phẩm
+  .product-list
+    each product in products
+      .product
+        img(src=product.image, alt=product.name)
+        h2= product.name
+        p Giá: #{product.price} VNĐ
+        button Mua ngay

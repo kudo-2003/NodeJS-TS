@@ -1,0 +1,23 @@
+1 Tao nhanh:
+ - !mdbc => ket noi mongodb
+ - !mdbgum => models User
+ - !mdba => 
+ - !mdbcd => 
+ - !mdbmr => 
+ - !mdbp =>
+ - !mdbbw =>
+ - !mdbcr =>
+ - !mdbcc =>
+ - !mdbim =>
+ - !mdbf =>
+ - !mdbfo =>
+ - !mdbfbi =>
+ - !mdbro =>
+ - !mdbfoau =>
+ - !mdbuo => 
+ - !mdbum =>
+ - !mdbfoad =>
+ - !mdbdo =>
+ - !mdbdm =>
+ - !mdbmethod =>
+ - !mdbstatic =>
